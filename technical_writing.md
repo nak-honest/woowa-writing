@@ -239,7 +239,7 @@ MySQL 공식 문서를 보면, SQL 은 S/X 락을 걸 때 레코드 단위로 �
 
 이 상황에서 `SELECT * FROM place WHERE ... FOR UPDATE` 를 실행하면 PK 인덱스를 스캔하는데, 현재 테이블이 비어 있기 때문에 인덱스 스캔 결과로 어떠한 레코드도 나오지 않게 됩니다.
 
-이때 MySQL은 갭 락이나 supremum pseudo-record X 락을 겁니다.
+이때 MySQL은 supremum pseudo-record X 락을 겁니다.
 <br>
 
 ### 갭 락과 Supremum pseudo-record X 락
